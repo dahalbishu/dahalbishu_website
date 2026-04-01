@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishwambhar Dahal - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bishwambhar Dahal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#experience-work">Experience</a></li>
+
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">  BISHWAMBHAR DAHAL</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience-work" onclick="toggleMenu()">Work Experience</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#news" onclick="toggleMenu()">News</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">BISHWAMBHAR DAHAL</h1>
+        <p class="section__text__p2">AI/ML Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1Y7qcO5qHGYIXMo5kDL-3fYEcXYIUIiTe/view?usp=sharing')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bishwambhar-dahal-055078244/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dahalbishu'"
+          />
+          <img
+            src="./assets/google-scholar-logo.png"
+            alt="My Google Scholar profile"
+            class="icon"
+            onclick="location.href='https://scholar.google.com/citations?user=eSZ0MfMAAAAJ&hl=en'"
+          />
+          <img
+            src="./assets/medium-logo.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@dahalbishwambhar'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />AI/ML Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor in Electronics, Communication and Information Engineering, Thapathali Campus</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am Bishwambhar Dahal, an AI/ML Engineer with expertise in deep learning, computer vision, and LLM. 
+              I hold a Bachelor's degree in Electronics, Communication, and Information Engineering from IOE, Thapathali Campus. 
+              With a strong background in AI research and model development, I specialize in designing intelligent systems that leverage 
+              deep learning frameworks and data-driven methodologies to solve complex problems. My work focuses on advancing AI-driven 
+              solutions, and I have contributed to multiple research publications exploring innovative AI technologies and their
+               real-world applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skill Set</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI & Software Development Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Mining</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Vision</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LLM</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C & C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI & Software Development Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LangChain, LlamaIndex</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Reinforcement Learning </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github Action</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL, MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience-work">
+      <p class="section__text__p1">Professional</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="work-experience-list">
+        <div class="work-experience-item">
+          <div class="work-exp-header">
+            <h2 class="work-exp-title">AI/ML Engineer, Clothets Pvt Ltd.</h2>
+            <p class="work-exp-date">Nov 2025 – Present</p>
+          </div>
+          <p class="work-exp-location">Dublin, Ireland | (Remote)</p>
+        </div>
+        <div class="work-experience-item">
+          <div class="work-exp-header">
+            <h2 class="work-exp-title">AI/ML Engineer, North Star Developer's Village (NSDevil)</h2>
+            <p class="work-exp-date">Apr 2025 – Nov 2025</p>
+          </div>
+          <p class="work-exp-location">Kathmandu, Nepal</p>
+        </div>
+        <div class="work-experience-item">
+          <div class="work-exp-header">
+            <h2 class="work-exp-title">AI/ML Engineer, Icebrkr AI Solutions Pvt. Ltd</h2>
+            <p class="work-exp-date">Mar 2024 – Sept 2024</p>
+          </div>
+          <p class="work-exp-location">Kathmandu, Nepal</p>
+        </div>
+      </div>
+    </section>
+    <section id="publications">
+      <p class="section__text__p1">View My</p>
+      <h1 class="title">Selected Publications</h1>
+      <ul class="publications-list">
+          <li>
+            <span class="publication-title">Cricket Bowling Action Recognition with Transformer-based Models</span> — <span class="publication-info">Published in Springer's Communications in Computer and Information Science (CCIS, Volume 2628), Oct 2025</span> — DOI: 10.1007/978-3-032-01169-5_14 <a href="https://doi.org/10.1007/978-3-032-01169-5_14" class="publication-link">[View]</a> <button class="citation-copy-btn" onclick="copyCitation('Subedi, B., Dahal, B., Bhatta, S., Maharjan, S., Poudel, S. (2026). Cricket Bowling Action Recognition with Transformer-Based Models. In: Distante, C., Battiato, S. (eds) Image Processing and Vision Engineering. IMPROVE 2025. Communications in Computer and Information Science, vol 2628. Springer, Cham. https://doi.org/10.1007/978-3-032-01169-5_14')" title="Copy citation">[Cite]</button>
+          </li>
+          <li>
+            <span class="publication-title">Advancements and Applications of Generative AI in Healthcare</span> — <span class="publication-info">Published in European Journal of Theoretical and Applied Sciences, Nov 2024</span> — DOI: 10.59324/ejtas.2024.2(6).77 <a href="https://doi.org/10.59324/ejtas.2024.2(6).77" class="publication-link">[View]</a> <button class="citation-copy-btn" onclick="copyCitation('Chataut, S., Bhatta, S., Dahal, B., Ojha, G., Subedi, B., & Bastakoti, B. (2024). Advancements and Applications of Generative AI in Healthcare. European Journal of Theoretical and Applied Sciences, 2(6), 873-895. https://doi.org/10.59324/ejtas.2024.2(6).77')" title="Copy citation">[Cite]</button>
+          </li>
+          <li>
+            <span class="publication-title">Comparative Analysis of Transformer-Based and CNN Models for High-Throughput Wheat Head Detection</span> — <span class="publication-info">Published in European Journal of Theoretical and Applied Sciences, Nov 2024</span> — DOI: 10.59324/ejtas.2024.2(6).70 <a href="https://doi.org/10.59324/ejtas.2024.2(6).70" class="publication-link">[View]</a> <button class="citation-copy-btn" onclick="copyCitation('Ojha, G., Dahal, B., Bhatta, S., & Chataut, S. (2024). Comparative Analysis of Transformer-Based and CNN Models for High-Throughput Wheat Head Detection. European Journal of Theoretical and Applied Sciences, 2(6), 784-793. https://doi.org/10.59324/ejtas.2024.2(6).70')" title="Copy citation">[Cite]</button>
+          </li>
+          <li>
+            <span class="publication-title">Automated Retail Billing: Streamlining Checkout with QR Codes and Object Tracking Using YOLOv8 and DeepSORT</span> — <span class="publication-info">Published in International Journal of Science and Engineering Technology, Oct 2024</span> — DOI: 10.61463/ijset.vol.12.issue5.253 <a href="https://doi.org/10.61463/ijset.vol.12.issue5.253" class="publication-link">[View]</a> <button class="citation-copy-btn" onclick="copyCitation('Dahal, B., Bhatta, S., Acharya, S., Shrestha, A., & Acharya, P. (2024). Automated retail billing: Streamlining checkout with QR codes and object tracking using YOLOv8 and DeepSORT. International Journal of Science, Engineering and Technology, 12(5). https://doi.org/10.61463/ijset.vol.12.issue5.253')" title="Copy citation">[Cite]</button>
+          </li>
+      </ul>
+    </section>
+    <section id="news">
+      <p class="section__text__p1">Stay Updated</p>
+      <h1 class="title">Recent News</h1>
+      <div class="news-container">
+        <div class="news-item">
+          <span class="news-date">Oct 2025</span>
+          <p class="news-content">Our paper on <strong>Cricket Bowling Action Recognition with Transformer-based Models</strong> has been published in <strong>Springer's Communications in Computer and Information Science</strong>. Special thanks to co-authors <strong>Bigyan Subedi, Sirjana Bhatta, Sonish Maharjan, and Sushmita Poudel</strong>.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Apr 2025</span>
+          <p class="news-content">We presented our <strong>Cricket Bowling Action Recognition with Transformer-based Models</strong> paper at the <strong>5<sup>th</sup> International Conference on Image Processing and Vision Engineering</strong> in Lisbon.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Feb 2025</span>
+          <p class="news-content">Our <strong>Cricket Bowling Action Recognition with Transformer-based Models</strong> paper has been accepted at the <strong>5<sup>th</sup> International Conference on Image Processing and Vision Engineering</strong> in Lisbon.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Nov 2024</span>
+          <p class="news-content">Our paper on <strong>Advancements and Applications of Generative AI in Healthcare</strong> has been published in the <strong>European Journal of Theoretical and Applied Sciences</strong>. Special thanks to co-authors <strong>Sandeep Chataut, Sinjana Bhatt, Grishma Ojha, Bigyan Subedi, and Bijay Bastakoti</strong>.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jun 2024</span>
+          <p class="news-content">I have completed my <strong>Bachelor's Degree in Electronics, Communication and Information Engineering</strong> from <strong>Institute of Engineering (IOE), Thapathali Campus, Tribhuvan University, Nepal</strong>.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jun 2024</span>
+          <p class="news-content">Our final year project <strong>MediVQA: Medical Visual Question Answering using VisualBERT</strong> was selected as <strong>One of the Best Final Year Projects</strong> by the Department Project Committee. Special thanks to project partners <strong>Apsara Shrestha, Sirjana Bhatta, and Sujana Acharya</strong>, and supervisor <strong>Er. Saroj Shakya</strong>.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Mar 2024</span>
+          <p class="news-content">We successfully defended our final year project <strong>MediVQA: Medical Visual Question Answering using VisualBERT</strong>. Special thanks to project partners <strong>Apsara Shrestha, Sirjana Bhatta, and Sujana Acharya</strong>, and supervisor <strong>Er. Saroj Shakya</strong>.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Mar 2023</span>
+          <p class="news-content">We successfully defended our minor project <strong>Smart Bill Master with Sales Analyzer</strong>. Special thanks to project partners <strong>Apsara Shrestha, Sirjana Bhatta, and Sujana Acharya</strong>, and supervisor <strong>Er. Praches Acharya</strong>.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dahalbishwambhar@gmail.com">dahalbishwambhar@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bishwambhar-dahal-055078244/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#experience-work">Experience</a></li>
+
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Bishwambhar Dahal. All Rights Reserved.</p>
+    </footer>
+    <div id="copied-popup" class="copied-popup">Copied!</div>
+    <script src="script.js"></script>
+  </body>
+</html>
